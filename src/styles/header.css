@@ -1,0 +1,70 @@
+:root {
+  /* color */
+  --gray-color: #dce4ed;
+  --purple-color: #3f51b5;
+}
+
+.main {
+  background-color: var(--gray-color);
+  padding: 16.2px 30px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-top {
+  position: relative;
+}
+
+.logo,
+.sub-list {
+  text-decoration: none;
+  color: var(--purple-color);
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.sub-list {
+  position: relative;
+  z-index: 1;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.auto-dropdown {
+  display: none; /* 초기에는 숨김 */
+  position: absolute;
+  top: 100%; /* Auto 링크 하단에 표시 */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 130px; /* 드롭다운 메뉴의 최소 너비 설정 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  z-index: 2; /* 다른 요소 위에 표시 */
+}
+
+/* Auto 링크에 마우스를 올리면 드롭다운 메뉴 표시 */
+.sub-list:hover + .auto-dropdown {
+  display: block;
+}
+
+.auto-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auto-dropdown ul li {
+  padding: 5px 0;
+}
+
+.sub-auto {
+  text-decoration: none;
+  color: var(--purple-color);
+}
