@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Auto() {
+function Auto() {
   return <div>Auto</div>;
 }
+
+export default Auto;

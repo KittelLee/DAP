@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Manual() {
+function Manual() {
   return <div>Manual</div>;
 }
+
+export default Manual;

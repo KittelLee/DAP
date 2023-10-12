@@ -1,70 +1,56 @@
 :root {
   /* color */
-  --gray-color: #dce4ed;
-  --purple-color: #3f51b5;
-}
-
-.main {
-  background-color: var(--gray-color);
-  padding: 16.2px 30px;
+  --white-color: #fff;
 }
 
 .header-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: fixed;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
 }
 
 .sub-top {
   position: relative;
 }
 
-.logo,
 .sub-list {
   text-decoration: none;
-  color: var(--purple-color);
-}
-
-.logo {
-  font-size: 24px;
-}
-
-.sub-list {
+  color: var(--white-color);
   position: relative;
   z-index: 1;
-  margin: 0 10px;
-  font-size: 18px;
+  margin: 0 20px;
+  font-size: 36px;
 }
 
-.auto-dropdown {
-  display: none; /* 초기에는 숨김 */
-  position: absolute;
-  top: 100%; /* Auto 링크 하단에 표시 */
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-  min-width: 130px; /* 드롭다운 메뉴의 최소 너비 설정 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-  z-index: 2; /* 다른 요소 위에 표시 */
+.sub-list span {
+  display: none;
 }
 
-/* Auto 링크에 마우스를 올리면 드롭다운 메뉴 표시 */
-.sub-list:hover + .auto-dropdown {
-  display: block;
+#icon-color1 {
+  color: lightyellow;
 }
 
-.auto-dropdown ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#icon-color2 {
+  color: lightgreen;
 }
 
-.auto-dropdown ul li {
-  padding: 5px 0;
+#icon-color3 {
+  color: steelblue;
 }
 
-.sub-auto {
-  text-decoration: none;
-  color: var(--purple-color);
+#icon-color4 {
+  color: lightcoral;
+}
+
+#icon-color5 {
+  color: gold;
+}
+
+#icon-color6 {
+  color: var(--white-color);
 }

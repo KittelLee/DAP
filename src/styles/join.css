@@ -1,0 +1,33 @@
+.join-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.join-form {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 450px;
+  height: 350px;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+.join-form input {
+  width: 100%;
+  padding: 6px 0;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.done-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 6px;
+  width: 25%;
+  background-color: skyblue;
+  padding: 10px 12px;
+}

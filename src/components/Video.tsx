@@ -10,7 +10,11 @@ function Video() {
       </video>
       <div className="content">
         <h1>DAP Security</h1>
-        <h3>중부대학교 정보보호학과 졸업작품</h3>
+        <h3>
+          중부대학교 정보보호학과 졸업작품
+          <br />
+          취약점 자동진단 사이트
+        </h3>
       </div>
     </div>
   );

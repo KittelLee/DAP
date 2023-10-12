@@ -1,62 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowsSpin,
+  faClipboardList,
+  faGear,
+  faHouse,
+  faLock,
+  faUserLock,
+} from "@fortawesome/free-solid-svg-icons";
 import "../styles/header.css";
 
 function Header() {
-  const [showAutoDropdown, setShowAutoDropdown] = useState(false);
-
-  const handleAutoMouseEnter = () => {
-    setShowAutoDropdown(true);
-  };
-
-  const handleAutoMouseLeave = () => {
-    setShowAutoDropdown(false);
-  };
-
   return (
     <div className="main">
       <header className="header-main">
-        <div>
-          <Link to="/" className="logo">
-            DAP Security
-          </Link>
-        </div>
         <div className="sub-top">
-          <Link
-            to="/Auto"
-            className="sub-list"
-            onMouseEnter={handleAutoMouseEnter}
-            onMouseLeave={handleAutoMouseLeave}
-          >
-            취약점진단[Auto]
+          <Link to="/" className="sub-list">
+            <FontAwesomeIcon icon={faHouse} id="icon-color1" />
+            <span>Home</span>
           </Link>
-          {showAutoDropdown && (
-            <div className="auto-dropdown">
-              <ul>
-                <li>
-                  <Link to="/Auto" className="sub-auto">
-                    취약점진단[자동]
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/AutoCheck" className="sub-auto">
-                    취약점진단[자동확인]
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          )}
+          <Link to="/Auto" className="sub-list">
+            <FontAwesomeIcon icon={faArrowsSpin} id="icon-color2" />
+            <span>Auto</span>
+          </Link>
           <Link to="/Manual" className="sub-list">
-            취약점진단[Manual]
+            <FontAwesomeIcon icon={faGear} id="icon-color3" />
+            <span>Manual</span>
           </Link>
           <Link to="/Board" className="sub-list">
-            게시판
+            <FontAwesomeIcon icon={faClipboardList} id="icon-color4" />
+            <span>Board</span>
           </Link>
           <Link to="/Login" className="sub-list">
-            로그인
+            <FontAwesomeIcon icon={faLock} id="icon-color5" />
+            <span>Login</span>
           </Link>
-          <Link to="/Membership" className="sub-list">
-            회원가입
+          <Link to="/Join" className="sub-list">
+            <FontAwesomeIcon icon={faUserLock} id="icon-color6" />
+            <span>Join</span>
           </Link>
         </div>
       </header>

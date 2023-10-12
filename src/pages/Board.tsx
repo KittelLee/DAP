@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Board() {
+function Board() {
   return <div>Board</div>;
 }
+
+export default Board;
